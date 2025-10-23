@@ -1,6 +1,6 @@
-import { Text, TextInput, View } from "react-native";
+import { FontAwesome } from "@expo/vector-icons";
+import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { s } from "./style";
-import { TouchableOpacity } from "react-native";
 
 export default function Header() {
   return (
@@ -12,7 +12,13 @@ export default function Header() {
           placeholder="Pesquise aqui a tarefa..."
         />
 
-        Touchable
+        <TouchableOpacity>
+          <FontAwesome
+            name="plus"
+            style={s.buttonAdd}
+          />
+          
+        </TouchableOpacity>
       </View>
     </View>
   );

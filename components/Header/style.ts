@@ -22,13 +22,30 @@ export const s = StyleSheet.create({
     textInputContainer: {
         width: "100%",
         display: "flex",
+        flexDirection: "row",
+        gap: 10,
+        height: 70,
+        alignItems: "center",
+        justifyContent: "center"
     },
 
     textInput: {
         backgroundColor: "#d0d0d0",
-        width: "90%",
-        marginTop: 15,
+        width: "80%",
         borderRadius: 10,
         paddingHorizontal: 15,
+    },
+
+    buttonAdd: {
+        color: "#fff",
+        backgroundColor: "blue",
+        display: "flex",
+        textAlign: "center",
+        padding: 5,
+        borderRadius: 10,
+        width: 45,
+        height: 45,
+        textAlignVertical: "center",
+        fontSize: 30
     }
 })
